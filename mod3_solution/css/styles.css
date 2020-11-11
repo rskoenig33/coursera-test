@@ -1,0 +1,153 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #f6b319;
+  border-radius: 0;
+  border: 0;
+}
+
+
+.navbar-brand {
+  padding-top: 25px;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p { /* Kosher cert */
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+.navbar-brand p span { /* Star-K */
+  vertical-align: middle;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
+  background-color: #F0E68C;
+  text-align: center;
+  position: relative;
+
+}
+
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+.dropdown-menu {
+    position: relative; ;
+    
+}
+
+*/
+/* END HEADER */
+
+
+
+
+/* HOME PAGE */
+
+#menu-tile span, #specials-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+.menu {
+    float: left;
+    border: 3px solid black;
+    background-color: #696969;
+    position: relative;
+    margin-bottom: 2%;
+}
+
+
+
+#p1 {
+  padding: 0px;
+  border: 1px solid black;
+  background-color: #E9967A;
+  width: 25%;
+  height: 30px;
+  text-align: center;
+  top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Helvetica;
+  color: black;
+  position: relative;
+  font-weight: bold;
+}
+#p2 {
+  padding: 0px;
+  border: 1px solid black;
+  background-color: #CD5C5C;
+  width: 25%;
+  height: 30px;
+  text-align: center;
+  top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Helvetica;
+  color: black;
+  position: relative;
+  font-weight: bold;
+}
+#p3 {
+  padding: 0px;
+  border: 1px solid black;
+  background-color: #F0E68C;
+  width: 25%;
+  height: 30px;
+  text-align: center;
+  top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Helvetica;
+  color: black;
+  position: relative;
+  font-weight: bold;
+}
+
+/* END HOME PAGE */
+
+
+
