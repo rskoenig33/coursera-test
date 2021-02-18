@@ -20,6 +20,10 @@
             })
 
         // Categories List
+        // Called by clicking on the link on home page
+        // goes to the categories.template.html and callses the service listed under resolve
+        // to get the full list of categories.
+        //passes control to the CategoryController as cC and the template
             .state('categories', {
                 url: '/categories',
                 templateUrl: 'src/menuapp/templates/categories.template.html',
@@ -32,6 +36,12 @@
             })
 
         // Items List
+         // Called by clicking on the link on categorieslist template
+        // goes to the items.template.html and callses the service listed under resolve
+        // to get the full list of menu_items within the category.
+        //passes control to the MenuItemController  passing the object (containing 2 arrays) as iC 
+        // the breaks the arrays out of the object which are then bound to the component ('<')e 
+        //the items.template calls the menuitems.template and passes items and details 
             .state('items', {
                 url: '/categories/{short_name}',
                 templateUrl: 'src/menuapp/templates/items.template.html',
@@ -39,7 +49,7 @@
                 resolve: {
                     menuItems: ['$stateParams', 'MenuDataService', function($stateParams, MenuDataService){
                         var short_name = $stateParams.short_name;
-                        //console.log("works");
+                        
                         return MenuDataService.getItemsForCategory(short_name)
                             .then(function(response) {
                                 var shortmenu = {
@@ -49,8 +59,7 @@
                                 };
                                 shortmenu.menu_items = response.menu_items;
                                 shortmenu.categoryDetails = response.category;
-                                //console.log("resolve returns menuItems: "+menuItems);
-                                //return response.menu_items;
+                                
                                 return shortmenu;
                             })
                             .catch(function (error) {
