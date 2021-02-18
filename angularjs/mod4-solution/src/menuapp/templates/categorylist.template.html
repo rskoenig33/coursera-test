@@ -1,4 +1,4 @@
-<!--<h2>Category List update</h2>-->
+<!-- called from categories.template - passes short_name: item.short_name -->
 <ul class="list-group">
     <li class="list-group-item active"><strong>Categories</strong></li>
     <li ng-repeat="item in $ctrl.items" class="list-group-item"><a ui-sref="items({short_name: item.short_name})"> {{item.name}} ({{item.short_name}})</a></li>
